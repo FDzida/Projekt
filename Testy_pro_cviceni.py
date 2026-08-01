@@ -14,6 +14,11 @@ while len(hrac_volby) < 3 or len(pocitac_volby) < 3:
 for hrac, pocitac in zip(hrac_volby, pocitac_volby):
   if hrac == pocitac:
     vysledek = "Remíza!"
+## pridano elif, AI pomohlo najit chybu
+  elif (hrac == "kamen" and pocitac == "nuzky") or \
+       (hrac == "nuzky" and pocitac == "papir") or \
+       (hrac == "papir" and pocitac == "kamen"):
+    vysledek = "Vyhrává hráč!"
   else:
     vysledek = "Vyhrává počítač!"
 
