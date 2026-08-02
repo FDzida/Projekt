@@ -23,3 +23,9 @@ for hrac, pocitac in zip(hrac_volby, pocitac_volby):
     vysledek = "Vyhrává počítač!"
 
   print(vysledek)
+
+
+
+
+
+
